@@ -13,6 +13,12 @@ module.exports = {
             loader: 'babel-loader',
             test: /\.js$/,
             exclude: /node_module/
+        }, {
+            test: /\.scss$/,
+            use: [
+                'style-loader',
+                'css-loader'
+            ]
         }]
     },
     devtool: 'cheap-module-eval-source-map',
